@@ -1,0 +1,93 @@
+﻿
+<h2 id="subTitle" style="margin-top:10px"></h2>
+
+<div class="form-horizontal" id="formUpdate">
+    <div class="form-group">
+        <label class="control-label col-md-2">
+            <span style="color:red">*</span>影片名稱
+        </label>
+        <div class="col-md-10">
+            <input type="text" id="videoName" name="videoName" data-maxtextlength="200" required
+              data-required-msg="此欄位為必填" data-maxtextlength-msg="請勿輸入超過200個字" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">
+            <span style="color:red">*</span>作者
+        </label>
+        <div class="col-md-10">
+            <input type="text" id="videoAuthor" name="videoAuthor" data-maxtextlength="30" required
+              data-required-msg="此欄位為必填" data-maxtextlength-msg="請勿輸入超過30個字" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">
+            <span style="color:red">*</span>出版商
+        </label>
+        <div class="col-md-10">
+            <input type="text" id="videoPublisher" name="videoPublisher" data-maxtextlength="20" required
+              data-required-msg="此欄位為必填" data-maxtextlength-msg="請勿輸入超過20個字" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">
+            <span style="color:red">*</span>內容簡介
+        </label>
+        <div class="col-md-10">
+            <textarea type="text" id="videoNote" name="videoNote" data-maxtextlength="1200" required
+              data-required-msg="此欄位為必填" data-maxtextarealength-msg="請勿輸入超過1200個字" ></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">
+            <span style="color:red">*</span>影片購買日期
+        </label>
+        <div class="col-md-10">
+            <input id="videoBoughtDate" name="videoBoughtDate" placeholder="yyyy/MM/dd" title="datepicker" required
+              data-required-msg="此欄位為必填"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">
+            <span style="color:red">*</span>影片類別
+        </label>
+        <div class="col-md-10">
+            <select id="videoClassId" name="videoClassId" data-required
+              data-required-msg="此欄位為必填">
+            </select>
+        </div>
+    </div>
+    <div id="divvideoStatus" class="form-group">
+        <label class="control-label col-md-2">
+            <span style="color:red">*</span>借閱狀態
+        </label>
+        <div class="col-md-10">
+            <select id="videoStatusId" name="videoStatusId" data-required
+              data-required-msg="此欄位為必填">
+            </select>
+        </div>
+    </div>
+    <div id="divvideoKeeper" class="form-group">
+        <label class="control-label col-md-2">
+            借閱人
+        </label>
+        <div class="col-md-10">
+            <select id="videoKeeperId" name="videoKeeperId" data-required
+              data-required-msg="此欄位為必填">
+            </select>
+        </div>
+    </div>
+    <div id="divButton" class="form-group hide" >
+        <div class="col-md-offset-2 col-md-10">
+            <button id="btnDelete" class="btn btn-danger"> 刪除</button>
+            <button id="btnUpdate" class="btn btn-success">存檔</button>
+            <button id="btnClear" class="btn btn-default">還原</button>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a href="/VideoData/Index">返回首頁</a>
+</div>
+
+<script src="~/Scripts/Page/updateVideoDataScript.js"></script>

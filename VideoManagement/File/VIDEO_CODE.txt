@@ -1,0 +1,6 @@
+VIDEO_STATUS	A	影片狀態	可以借出
+VIDEO_STATUS	B	影片狀態	已借出
+VIDEO_STATUS	U	影片狀態	不可借出
+VIDEO_STATUS	C	影片狀態	已借出(未領)
+BLOOD_TYPE	A	血型	A型
+BLOOD_TYPE	O	血型	O型

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    <link href="~/Content/style.css" rel="stylesheet">
+    <!-- 引入bootstrap樣式 -->
+    <link href="~/Content/bootstrap.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/script.js"></script>
+    <link rel="stylesheet" href="~/Content/kendo.common-material.min.css">
+    <link rel="stylesheet" href="~/Content/kendo.material-main.min.css">
+    <link rel="stylesheet" href="~/Content/uikit.min.css">
+    <script src="~/Scripts/kendo.all.min.js"></script>
+    <script src="~/Scripts/uikit.min.js"></script>
+    <script src="~/Scripts/kendo.culture.zh-TW.min.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("影片維護", "Index", "VideoData", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("新增", "InsertVideoData", "VideoData")</li>
+                    @*<li>@Html.ActionLink("連絡人", "Contact", "Home")</li>*@
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="myAlert" class="alert " role="alert" style="position: fixed; width: 100%; z-index:1"></div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - 影片維護系統</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

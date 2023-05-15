@@ -1,0 +1,51 @@
+﻿
+<h2 style="margin-top:10px">影片維護</h2>
+
+<div class="form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-md-2">
+            影片名稱
+        </label>
+        <div class="col-md-10">
+            <input type="text" id="videoName"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">
+            影片類別
+        </label>
+        <div class="col-md-10">
+            <select class="form-control" id="videoClassId">
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">
+            借閱人
+        </label>
+        <div class="col-md-10">
+            <select class="form-control" id="videoKeeperId">
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-2">
+            借閱狀態
+        </label>
+        <div class="col-md-10">
+            <select class="form-control" id="videoStatusId" >
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button id="btnSearch" class="btn btn-success">查詢</button>
+            <button id="btnClear" class="btn btn-default">清除</button>
+            <button id="btnAdd" class="btn btn-primary">新增</button>
+        </div>
+    </div>
+</div>
+<div id="videoGrid"></div>
+
+<script src="~/Scripts/Page/indexScript.js"></script>
+
