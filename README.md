@@ -5,7 +5,7 @@
 由DAO負責進行DB的CRUD操作；Service再將DAO的內容包裝成服務提供給Controller，但由於此系統較為單純所以Service沒做太多處理；
 最後Controller負責處理View的請求及做View與Service之間的資料處理；Model則是用來儲存資料模型；Common是存放共用的Method，例如:Decode或Log等。
 
-除了上述五層外還有Test層用來進行簡易單元測試，包括測試刪除邏輯是否正確 等。
+除了上述五層外還有Test層用來進行簡易單元測試，包括測試刪除邏輯是否正確等。
 
 ### Layer架構圖
 * DAO：進行DB的CRUD操作。
