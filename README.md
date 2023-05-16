@@ -15,6 +15,8 @@
 * Common：共用Method。
 * Test：單元測試。
 ![image](https://github.com/ff501026/VideoManagement_Web/assets/103199969/3e9d6b5c-0a70-4a1b-b13e-7df3da7500d2)
+## 使用說明
+使用前請先執行`DataBase/VideoManagement_Setup.sql`建立資料庫，並至`VideoManagement/Web.config`修改`DBConn`的連接字串。
 ## 功能介紹
 ### 首頁-查詢
 * 首頁為查詢畫面，預設會帶出所有影音資訊及借閱狀態，點選影片名稱可以看明細資料。
